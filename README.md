@@ -1,1 +1,1 @@
-# angular-app
+# angular-app(Angular+TypeScript+Bootstrap)
