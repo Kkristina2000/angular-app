@@ -1,0 +1,14 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of filteredData">
+        <td>{{data.name.first + ' ' + data.name.last }}</td>
+        <td>{{data.amount}}</td>
+      </tr>
+    </tbody>
+</table>

@@ -1,0 +1,11 @@
+<ul class="nav justify-content-center">
+  <li class="nav-item" *ngFor="let item of filterItems">
+    <a
+      class="nav-link"
+      [routerLink]="item.path"
+      type="button"
+      (click)="handleFilter(item.type)"
+      >{{ item.title }}</a
+    >
+  </li>
+</ul>
