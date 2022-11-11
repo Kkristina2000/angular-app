@@ -11,8 +11,8 @@ The application will be started off the empty Angular’s project, which is crea
 The application will use Bootstrap 4 as CSS framework, to minimize the effort of writing your own SCSS.
 The application will consist of 2 pages:
 
-List page (“/navigator” URL)
-Summary page (“/” URL)
+1. List page (“/navigator” URL)
+2. Summary page (“/” URL)
 
 1.2. Data structure
 The application will be built around a list of rows which will be a JS array. Each row will be represented with an object stored inside this array. Each object will have the following properties:
@@ -43,9 +43,7 @@ The application will be built around a list of rows which will be a JS array. Ea
 
     }
 
-You can just copy the following JSON into the TypeScript source file and use it anywhere in the code:
-
-https://codebeautify.org/jsonviewer/cb1d6ce2
+You can just copy the following JSON into the TypeScript source file and use it anywhere in the code: https://codebeautify.org/jsonviewer/cb1d6ce2
 
 
 This is a test, so this object describes an abstract “transaction”. You’re free to modify, or use different data JSON, if you have a better idea of what data structure could be.
