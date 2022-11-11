@@ -15,6 +15,7 @@ The application will consist of 2 pages:
 2. Summary page (“/” URL)
 
 1.2. Data structure
+
 The application will be built around a list of rows which will be a JS array. Each row will be represented with an object stored inside this array. Each object will have the following properties:
 
     {
@@ -49,15 +50,18 @@ You can just copy the following JSON into the TypeScript source file and use it 
 This is a test, so this object describes an abstract “transaction”. You’re free to modify, or use different data JSON, if you have a better idea of what data structure could be.
 
 2.1. Project setup
+
 Generate project using Angular CLI
 Include Bootstrap 4
 
 2.2. List page
+
 The “List” page is a tab set. Each tab has a simple table. It has 2 columns. First column is “Name” or some other object identity. Second column is some amount or quantity. It’s rows are objects from the JSON above, filtered by “type” property. The “Income” tab will display only those objects, which have “type” === “income”. Other 3 tabs have exactly same filtering logic.
 
 The URL of the page should be: /navigator?tab=<0..3>, where tab query parameter corresponds to a currently selected tab, and the type by which the table is filtered.
 
 2.3. Summary page
+
 This page is displayed at the root URL (/). It has cards, please use Bootstrap 4 “card” SCSS classes. This page uses exactly the same JSON data, as the “List” page.
 
 First card is “Heading” card - it displays total number of objects and text
